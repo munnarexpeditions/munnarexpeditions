@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+
 :root {
   --color: #ffff;
   --color2: black;
@@ -74,6 +76,8 @@ li {
 
 .btn {
   color: var(--color3);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
   font-size: 1.8rem;
   display: flex;
   align-items: center;
@@ -86,6 +90,7 @@ li {
   box-shadow: var(--color4) 0px 3px 8px;
   overflow: hidden;
 }
+
 .btn span {
   color: var(--color3);
   font-weight: 700;
@@ -173,7 +178,7 @@ li {
   outline: none;
   border: none;
   margin: 8rem auto;
-  font-weight: 700;
+  font-weight: bolder;
   color: var(--color2);
   background-color: transparent;
   border: 6px solid var(--color2);
@@ -226,6 +231,8 @@ li {
   color: var(--color2);
 }
 .main-text h1 {
+   font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
   font-size: 4rem;
   letter-spacing: 1.5px;
   margin-bottom: 2rem;
@@ -234,6 +241,8 @@ li {
   color: var(--color2);
 }
 .main-text h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
   display: inline-block;
   text-transform: uppercase;
   font-size: 1rem;
@@ -249,6 +258,7 @@ li {
   background-color: var(--color5);
 }
 .main-text p {
+  
   display: inline-block;
   font-size: 1.3rem;
   letter-spacing: 1px;
@@ -372,7 +382,8 @@ li {
   display: none;
 }
 .primary-header .left-part .logo h1 {
-  font-family: "Poppins", sans-serif;
+  font-family:'Montserrat', sans-serif;
+  font-weight: bolder;
   font-size: 2rem;
 }
 .primary-header .left-part .logo h1 span {
@@ -401,9 +412,10 @@ li {
   flex-direction: column;
 }
 .primary-header .right-part .navbar ul li a {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
   color: var(--color3);
   font-size: 2rem;
-  font-weight: 500;
   transition: all 500ms ease-in-out;
 }
 .primary-header .right-part .navbar ul li a:hover {
@@ -440,7 +452,6 @@ li {
 .primary-header .right-part .ham-menu.active .line-3 {
   transform: rotate(-405deg);
 }
-
 .banner {
   position: relative;
   background: linear-gradient(rgba(0, 0, 0, 0.401), rgba(0, 0, 0, 0.605)), url("https://github.com/Yu5Ry7/raghu/blob/main/public/images/land4.png?raw=true");
@@ -458,6 +469,8 @@ li {
   margin: 0 auto;
   text-align: left;
   line-height: 1.5;
+  font-style:'Montserrat', sans-serif;
+  font-weight: bolder;
 }
 .banner-text h1 {
   font-size: 8vh;
@@ -466,12 +479,15 @@ li {
   letter-spacing: 1px;
   text-transform: uppercase;
   line-height: 1.3;
-  font-family: "Poppins", sans-serif;
+  font-style:'Montserrat', sans-serif;
+  font-weight: bolder;
 }
 .banner-text h1 span {
   color: var(--color2);
 }
 .banner-text p {
+  font-style: 'Montserrat', sans-serif;
+  font-weight: 500;
   color: var(--color3);
   font-size: 1.8rem;
   letter-spacing: 1px;
@@ -516,7 +532,6 @@ li {
   -o-object-fit: cover;
      object-fit: cover;
 }
-
 .tour {
   width: 100%;
   margin: 0rem auto 0rem auto;
@@ -550,6 +565,8 @@ li {
   line-height: 1.7;
 }
 .tour .main-container .tour-cards-text h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
   cursor: pointer;
   font-size: 3rem;
   margin-bottom: 1rem;
@@ -594,7 +611,7 @@ li {
 }
 
 .tour .main-container .tour-cards-text .price p {
-  font-weight: bolder;
+  font-weight: 500;
   font-size: medium;
   padding: 1.5rem 0rem;
   border-radius: 10rem; /* Make all corners rounded */
@@ -605,6 +622,7 @@ li {
 .tour .main-container .tour-cards-text .price:hover {
   color: var(--color3);
 }
+
 
 
 
@@ -686,8 +704,7 @@ li {
   flex-basis: 75%;
   opacity: 80%;
 }
-*/
-.media {
+*/.media {
   margin: 0rem auto 0rem auto;
   padding: 10rem 2rem 2rem 2rem;
 }
@@ -696,6 +713,8 @@ li {
   overflow: auto;
   width: 100%;
   gap: 2rem;
+  font-family: m'Montserrat', sans-serif;
+  font-weight: bolder;
 }
 .media .main-container .image { 
   flex: 0 0 auto;
@@ -737,6 +756,7 @@ li {
 .media .main-container .image:hover h3 {
   opacity: 1;
 }
+
 
 /*
 .contact {
@@ -799,10 +819,7 @@ li {
   color: var(--color3);
   opacity: 70%;
 }
-*/
-footer {
-  margin: 5rem auto 0rem auto;
-  background-color: var(--color8);
+*/footer {
   margin: 5rem auto 0rem auto;
   background-color: var(--color8);
   border-top: 4px solid black;  /* Add this line */
@@ -835,6 +852,8 @@ footer .main-container img {
   width: 55px;
 }
 footer .main-container p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: lighter;
   line-height: 1.5;
   font-size: 1.5rem;
   text-transform: lowercase;
@@ -845,50 +864,45 @@ footer .main-container h1 {
 }
 
 footer .main-container .heading-foo h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
   margin-bottom: 1rem;
 }
-footer .main-container .social-media {
-  order: 3;
-  display: flex;
-  justify-content: left;
-  flex-direction: column;
-  gap: 3rem;
+
+footer .main-container .social-media h1 {
+  margin-bottom: 1rem; /* This adds space beneath the heading */
 }
+
 footer .main-container .social-media ul {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  gap: 2rem;
+  display: flex; /* Places list items in a row */
+  justify-content: flex-start; /* Align items at the start */
+  list-style: none; /* Removes bullet points */
+  padding: 0 1rem; /* This reduces the space between the icons */
 }
+
 footer .main-container .social-media ul li {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: lighter;
   cursor: pointer;
   flex-wrap: nowrap;
-  width: 40px;
-  aspect-ratio: 1/1;
   background-color: transparent;
-  border: 3px solid var(--color2);
-  border-radius: 100px;
+  border: none; /* remove the round border */
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 350ms ease-in-out;
+  margin-right: 1rem; /* This also reduces the space between the icons */
 }
-footer .main-container .social-media ul li .fill {
-  fill: var(--color2);
+
+footer .main-container .social-media ul li i {
+  font-size: 3rem; /* Increase the font size for larger icons */
+  color: black; /* set the icon color to black */
 }
-footer .main-container .social-media ul li svg {
-  color: var(--color2);
-  width: 1.5rem;
+
+footer .main-container .social-media ul li:hover i {
+  color: white; /* set the hover color to white */
 }
-footer .main-container .social-media ul li:hover {
-  background-color: var(--color2);
-}
-footer .main-container .social-media ul li:hover .fill {
-  fill: var(--color);
-}
-footer .main-container .social-media ul li:hover svg {
-  color: var(--color);
-}
+
 footer .main-container .main {
   display: flex;
   justify-content: left;
@@ -901,6 +915,8 @@ footer .main-container .main ul {
   gap: 0.6rem;
 }
 footer .main-container .main ul li a {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: lighter;
   font-size: 1.5rem;
   transition: all 350ms ease-in-out;
 }
@@ -981,5 +997,5 @@ footer .credit a {
   footer .main-container .main {
     padding: 0 0 0 5rem;
   }
-}/*# sourceMappingURL=style.css.map */
+}
 
