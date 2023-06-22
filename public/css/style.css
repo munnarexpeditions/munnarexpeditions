@@ -623,87 +623,6 @@ li {
   color: var(--color3);
 }
 
-
-
-
-/*
-.sale {
-  background: linear-gradient(to top left, var(--color9), var(--color10)), url("https://images.unsplash.com/photo-1488415032361-b7e238421f1b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 100vh;
-  color: var(--color3);
-  padding: 5rem 2rem;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.sale .heading {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  margin-bottom: 2rem;
-}
-.sale .heading h1 {
-  cursor: pointer;
-  transition: all 350ms ease-in-out;
-  font-size: 4rem;
-}
-.sale .heading h1:hover {
-  color: var(--color2);
-}
-.sale .heading h2 {
-  font-size: 1.6rem;
-  text-transform: uppercase;
-  padding: 0.5rem 1rem;
-  background-color: var(--color);
-  color: var(--color2);
-  border-radius: 50px;
-}
-.sale .info {
-  width: 100%;
-  margin-bottom: 2rem;
-}
-.sale .info p {
-  font-size: 1.4rem;
-}
-.sale .price {
-  width: 100%;
-  max-width: 500px;
-  cursor: pointer;
-  margin-top: 3rem;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  color: var(--color8);
-  border-radius: 50px;
-  text-align: center;
-}
-.sale .price p {
-  padding: 0.6rem;
-  background-color: var(--color3);
-  text-align: center;
-  font-size: 1.3rem;
-  flex-basis: 35%;
-  margin: 0;
-  color: var(--color8);
-  opacity: 100%;
-  font-weight: 700;
-  display: flex;
-  flex-direction: column;
-  border-radius: 10rem 0rem 0rem 10rem;
-}
-.sale .price h2 {
-  padding: 1.5rem 0rem;
-  border-radius: 0rem 10rem 10rem 0rem;
-  background-color: hsl(0deg, 0%, 90%);
-  flex-basis: 75%;
-  opacity: 80%;
-}
 */.media {
   margin: 0rem auto 0rem auto;
   padding: 10rem 2rem 2rem 2rem;
@@ -896,11 +815,11 @@ footer .main-container .social-media ul li {
 
 footer .main-container .social-media ul li i {
   font-size: 3rem; /* Increase the font size for larger icons */
-  color: black; /* set the icon color to black */
+  color: rgb(255, 255, 255); /* set the icon color to black */
 }
 
 footer .main-container .social-media ul li:hover i {
-  color: white; /* set the hover color to white */
+  color: rgb(0, 0, 0); /* set the hover color to white */
 }
 
 footer .main-container .main {
