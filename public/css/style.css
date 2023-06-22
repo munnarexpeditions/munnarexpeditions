@@ -113,6 +113,88 @@ li {
   transform: translateX(600px);
 }
 
+/*WhatsApp Animated Icon Styles*/
+.whatsapp-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  text-align: center;
+}
+
+.icon-container {
+  display: inline-flex; /* Centers the icon vertically */
+  justify-content: center; /* Centers the icon horizontally */
+  width: 60px; /* Adjust size as needed */
+  height: 60px; /* Adjust size as needed */
+  border-radius: 50%; /* Makes the border round */
+  background-color:white; /* Sets the inside color to black */
+  border: 1px solid,black; /* Adjust border color/size as needed */
+}
+
+.whatsapp-icon i {
+  font-size: 48px;
+  color: green;
+  align-self: center; /* Centers the icon vertically */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.whatsapp-icon p {
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+  margin: 0;
+  margin-bottom: 10px; /* Add bottom margin */
+}
+
+/* Change color on hover */
+.whatsapp-icon:hover .icon-container {
+  background-color: black;
+}
+
+.whatsapp-icon:hover i {
+  color: green;
+}
+
+/*Animation Keyframes*/
+@keyframes move {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(-20px); }
+}
+
+.move {
+  animation: move 2s infinite;
+}
+
+@media (max-width: 600px) {
+
+  .whatsapp-icon {
+    position: fixed;
+    bottom: 10px;  /* reduced bottom margin */
+    right: 10px;  /* reduced right margin */
+  }
+  
+  .icon-container {
+    width: 50px;  /* reduced size */
+    height: 50px;  /* reduced size */
+  }
+  
+  .whatsapp-icon i {
+    font-size: 30px;  /* reduced font size */
+  }
+  
+  .whatsapp-icon p {
+    font-size: 12px;  /* reduced font size */
+  }
+  
+  /*Reduce animation intensity for smaller screens*/
+  @keyframes move {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(-10px); }  /* reduced translation */
+  }
+
+}
+
 /*view more*/
 @keyframes rotateAnimation {
   0% {
@@ -613,12 +695,13 @@ li {
 .tour .main-container .tour-cards-text .price p {
   font-weight: 500;
   font-size: medium;
-  padding: 1.5rem 0rem;
-  border-radius: 10rem; /* Make all corners rounded */
-  background-color:var(--color12);
+  padding: 1.5rem 2rem; /* Increase the horizontal padding to make the button wider */
+  border-radius: 10rem;
+  background-color: var(--color12);
   flex-basis: 75%;
   opacity: 100%;
 }
+
 .tour .main-container .tour-cards-text .price:hover {
   color: var(--color3);
 }
@@ -815,11 +898,11 @@ footer .main-container .social-media ul li {
 
 footer .main-container .social-media ul li i {
   font-size: 3rem; /* Increase the font size for larger icons */
-  color: rgb(255, 255, 255); /* set the icon color to black */
+  color:rgb(0, 0, 0); /* set the icon color to black */
 }
 
 footer .main-container .social-media ul li:hover i {
-  color: rgb(0, 0, 0); /* set the hover color to white */
+  color:  rgb(255, 255, 255); /* set the hover color to white */
 }
 
 footer .main-container .main {

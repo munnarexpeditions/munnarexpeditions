@@ -192,3 +192,93 @@ button:active {
   border: 0.1em solid black;
   transition: all 0.2s ease-in-out;
 }
+
+/*WhatsApp Animated Icon Styles*/
+.whatsapp-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  text-align: center;
+}
+
+.icon-container {
+  display: inline-flex; /* Centers the icon vertically */
+  justify-content: center; /* Centers the icon horizontally */
+  width: 60px; /* Adjust size as needed */
+  height: 60px; /* Adjust size as needed */
+  border-radius: 50%; /* Makes the border round */
+  background-color:white; /* Sets the inside color to black */
+  border: 1px solid,black; /* Adjust border color/size as needed */
+}
+
+.whatsapp-icon i {
+  font-size: 48px;
+  color: green;
+  align-self: center; /* Centers the icon vertically */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.whatsapp-icon p {
+  font-size: 14px;
+  font-weight: bold;
+  color:green;
+  margin: 0;
+  margin-bottom: 10px; /* Add bottom margin */
+}
+
+/* Change color on hover */
+.whatsapp-icon:hover .icon-container {
+  background-color: black;
+}
+
+.whatsapp-icon:hover i {
+  color: green;
+}
+.whatsapp-icon a {
+  text-decoration: none;  /* Removes underline */
+  color: inherit;  /* Inherits color from parent */
+}
+
+
+
+/*Animation Keyframes*/
+@keyframes move {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(-20px); }
+}
+
+.move {
+  animation: move 2s infinite;
+}
+
+@media (max-width: 600px) {
+
+  .whatsapp-icon {
+    position: fixed;
+    bottom: 10px;  /* reduced bottom margin */
+    right: 10px;  /* reduced right margin */
+  }
+  
+  .icon-container {
+    width: 50px;  /* reduced size */
+    height: 50px;  /* reduced size */
+  }
+  
+  .whatsapp-icon i {
+    font-size: 30px;  /* reduced font size */
+  }
+  
+  .whatsapp-icon p {
+    font-size: 12px;  /* reduced font size */
+    text-decoration: none; /* Removes underline */
+
+  }
+  
+  /*Reduce animation intensity for smaller screens*/
+  @keyframes move {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(-10px); }  /* reduced translation */
+  }
+
+}
