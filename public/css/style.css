@@ -631,7 +631,7 @@ li {
 .tour .main-container .tour-cards .image-box {
   border-radius: 5px;
   grid-column: span 2;
-  height: auto;
+  height: 300px;
 }
 .tour .main-container .tour-cards .image-box .overlay {
   opacity: 25%;
