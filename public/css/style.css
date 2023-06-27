@@ -898,11 +898,11 @@ footer .main-container .social-media ul li {
 
 footer .main-container .social-media ul li i {
   font-size: 3rem; /* Increase the font size for larger icons */
-  color:rgb(0, 0, 0); /* set the icon color to black */
+  color:rgb(255, 255, 255); /* set the icon color to black */
 }
 
 footer .main-container .social-media ul li:hover i {
-  color:  rgb(255, 255, 255); /* set the hover color to white */
+  color:  rgb(0, 0, 0); /* set the hover color to white */
 }
 
 footer .main-container .main {
