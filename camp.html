@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/MTP_logo.png" type="image/png">
+    <title>Munnar Trip Planners</title>
+    <style>
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  position: relative;
+  max-width: 1000px;
+  flex-wrap: wrap;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 100px 0;
+}
+
+.card:nth-child(odd) {
+  flex-direction: row;
+}
+
+.card:nth-child(even) {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.card:nth-child(even) .imgBx {
+  left: -25px;
+}
+
+.card .imgBx {
+  position: relative;
+  left: 25px;
+  width: 500px;
+  height: 400px;
+  z-index: 1;
+}
+
+.card .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card .contentBx {
+  position: relative;
+  right: 25px;
+  width: 500px;
+  height: 400px;
+  background: #000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 60px 20px 100px;
+}
+
+.card:nth-child(even) .contentBx {
+  right: -25px;
+  padding: 20px 100px 20px 60px;
+}
+
+.card .contentBx:before {
+  content: '';
+  position: absolute;
+  top: -50px;
+  bottom: -50px;
+  left: 0;
+  right: 0;
+  background: #000;
+  z-index: -1;
+}
+
+.card .content h2 {
+  font-size: 1.5em;
+}
+
+.card .content p {
+  margin-top: 10px;
+}
+
+.card .content a {
+  display: inline-block;
+  margin-top: 15px;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  border: 1px solid #fff;
+}
+
+@media (max-width: 1000px) {
+  .card {
+    flex-direction: column;
+    max-width: 350px;
+    margin: 25px;
+  }
+  
+  
+  .card .imgBx {
+    width: 100%;
+    height: 250px;
+    left: 0;
+  }
+  
+  .card .contentBx {
+    width: 100%;
+    height: auto;
+    right: 0;
+    padding: 30px;
+    text-align: center;
+  }
+  
+  .card .contentBx:before {
+    top: 0;
+    bottom: 0;
+  }
+  
+  .card:nth-child(even) .imgBx {
+    left: 0;
+  }
+  
+  .card:nth-child(even) .contentBx {
+    right: 0;
+    padding: 30px;
+  }
+}
+
+    </style>
+</head>
+<body>
+
+
+  <div class="container center">
+    <div class="card">
+      <div class="imgBx">
+        <img src="./images/pothamed-explore.jpg" alt="img1">
+      </div>
+      <div class="contentBx">
+        <div class="content">
+          <h2>Pothamedu</h2>
+  
+          <p>Minimum 2 people are required for a package(2500/head)</p>
+          <a href="https://wa.me/+918921189742?text=I%20would%20like%20to%20know%20about%20the%20price%20details%20about%20Pothamed%20Camping%20package">Reserve</a>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="imgBx">
+        <img src="./images/" alt="img2">
+      </div>
+      <div class="contentBx">
+        <div class="content">
+          <h2>Koluku Malai</h2>
+          <p>Minimum 6 people are required for a package(2300/head)</p>
+          <a href="https://wa.me/+918921189742?text=I%20would%20like%20to%20know%20about%20the%20price%20details%20about%20Pothamed%20Camping%20package">Reserve</a>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="imgBx">
+        <img src="./images/meesha-explore.jpg" alt="img3">
+      </div>
+      <div class="contentBx">
+        <div class="content">
+          <h2>MeeshaPulimalai</h2>
+          <p>Minimum 6 people are required for a package(2900/head)</p>
+          <a href="https://wa.me/918078763490">Reserve</a>
+        </div>
+      </div>
+    </div>
+        
+</body>
+</html>
+
+
+
+
+  
