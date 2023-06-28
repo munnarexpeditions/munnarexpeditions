@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/MTP_logo.png" type="image/png">
-    <title>Munnar Trip Planners</title>
+    <title>Munnar Expeditions</title>
+    <link rel="stylesheet" href="style.css">
     <style>
-@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+      @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 
 * {
   margin: 0;
@@ -17,189 +18,98 @@
 }
 
 body {
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
+  background-image: url(/public/images/view-visual.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 20px;
+  display: flexbox;
   justify-content: center;
-  align-items: center;
 }
 
 .container {
-  position: relative;
-  max-width: 1000px;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2em; /* Increase space between grid items */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
+
 
 .card {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  margin: 100px 0;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+ 
 }
 
-.card:nth-child(odd) {
-  flex-direction: row;
-}
-
-.card:nth-child(even) {
-  flex-direction: row-reverse;
-  text-align: right;
-}
-
-.card:nth-child(even) .imgBx {
-  left: -25px;
-}
-
-.card .imgBx {
-  position: relative;
-  left: 25px;
-  width: 500px;
-  height: 400px;
-  z-index: 1;
-}
-
-.card .imgBx img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
+.card img {
   width: 100%;
+  height: 200px;
   object-fit: cover;
 }
 
-.card .contentBx {
-  position: relative;
-  right: 25px;
-  width: 500px;
-  height: 400px;
-  background: #000;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 60px 20px 100px;
+.card h2 {
+  margin: 10px 0;
+  font-size: 24px;
 }
 
-.card:nth-child(even) .contentBx {
-  right: -25px;
-  padding: 20px 100px 20px 60px;
+.card p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
 }
 
-.card .contentBx:before {
-  content: '';
-  position: absolute;
-  top: -50px;
-  bottom: -50px;
-  left: 0;
-  right: 0;
-  background: #000;
-  z-index: -1;
-}
-
-.card .content h2 {
-  font-size: 1.5em;
-}
-
-.card .content p {
-  margin-top: 10px;
-}
-
-.card .content a {
+.card a {
   display: inline-block;
-  margin-top: 15px;
+  padding: 10px 15px;
+  background: #000;
   color: #fff;
   text-decoration: none;
-  padding: 10px;
-  border: 1px solid #fff;
+  border-radius: 5px;
 }
 
-@media (max-width: 1000px) {
-  .card {
-    flex-direction: column;
-    max-width: 350px;
-    margin: 25px;
+/* Media queries for responsiveness */
+@media (min-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
   }
-  
-  
-  .card .imgBx {
-    width: 100%;
-    height: 250px;
-    left: 0;
-  }
-  
-  .card .contentBx {
-    width: 100%;
-    height: auto;
-    right: 0;
-    padding: 30px;
-    text-align: center;
-  }
-  
-  .card .contentBx:before {
-    top: 0;
-    bottom: 0;
-  }
-  
-  .card:nth-child(even) .imgBx {
-    left: 0;
-  }
-  
-  .card:nth-child(even) .contentBx {
-    right: 0;
-    padding: 30px;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    grid-template-columns: 1fr;
   }
 }
 
     </style>
 </head>
 <body>
-
-
-  <div class="container center">
+  <div class="container">
     <div class="card">
-      <div class="imgBx">
-        <img src="./images/pothamed-explore.jpg" alt="img1">
-      </div>
-      <div class="contentBx">
-        <div class="content">
-          <h2>Pothamedu</h2>
-  
-          <p>Minimum 2 people are required for a package(2500/head)</p>
-          <a href="https://wa.me/+918921189742?text=I%20would%20like%20to%20know%20about%20the%20price%20details%20about%20Pothamed%20Camping%20package">Reserve</a>
-        </div>
-      </div>
+      <img src="./public/images/pothamed-explore.jpg" alt="Pothamedu">
+      <h2>Pothamedu</h2>
+      <p>Minimum 2 people are required for a package(2500/head)</p>
+      <a href="https://wa.me/+918921189742?text=I%20would%20like%20to%20know%20about%20the%20price%20details%20about%20Pothamed%20Camping%20package">Reserve</a>
     </div>
     <div class="card">
-      <div class="imgBx">
-        <img src="./images/" alt="img2">
-      </div>
-      <div class="contentBx">
-        <div class="content">
-          <h2>Koluku Malai</h2>
-          <p>Minimum 6 people are required for a package(2300/head)</p>
-          <a href="https://wa.me/+918921189742?text=I%20would%20like%20to%20know%20about%20the%20price%20details%20about%20Pothamed%20Camping%20package">Reserve</a>
-        </div>
-      </div>
+      <img src="./public/images/meesha-explore.jpg" alt="Koluku Malai">
+      <h2>Koluku Malai</h2>
+      <p>Minimum 6 people are required for a package(2300/head)</p>
+      <a href="https://wa.me/+918921189742?text=I%20would%20like%20to%20know%20about%20the%20price%20details%20about%20Kolukumalai%20Camping%20package">Reserve</a>
     </div>
     <div class="card">
-      <div class="imgBx">
-        <img src="./images/meesha-explore.jpg" alt="img3">
-      </div>
-      <div class="contentBx">
-        <div class="content">
-          <h2>MeeshaPulimalai</h2>
-          <p>Minimum 6 people are required for a package(2900/head)</p>
-          <a href="https://wa.me/918078763490">Reserve</a>
-        </div>
-      </div>
+      <img src="./public/images/Munnar-Meesapulimalai.jpg" alt="MeeshaPulimalai">
+      <h2>MeeshaPulimalai</h2>
+      <p>Minimum 6 people are required for a package(2900/head)</p>
+      <a href="https://wa.me/+918921189742?text=I%20would%20like%20to%20know%20about%20the%20price%20details%20about%20Meesapulimalai%20Camping%20package">Reserve</a>
     </div>
-        
+    <div class="card">
+      <img src="./public/images/yellapaty-explore.jpg" alt="Yellapetty">
+      <h2>Yellapetty</h2>
+      <p>The price money of the camping package is frequently adjusted</p>
+      <a href="https://wa.me/+918921189742?text=I%20would%20like%20to%20know%20about%20the%20price%20details%20about%20Yellapetty%20Camping%20package">Reserve</a>
+    </div>
+  </div>    
 </body>
 </html>
-
-
-
-
-  
