@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeep Safari</title>
+
+    <style>
+        :root {
+            --black: black;
+            --white: white;
+            --green: #06c526;
+        }
+
+        body {
+            padding:0;
+            margin:0;
+            font-family:sans-serif;
+            text-align:center;
+            background:var(--black);
+            perspective:50vw;
+        }
+
+        #box {
+            width:100%;
+            margin:auto;
+            position:relative;
+        }
+
+        img {
+            width:100%;
+            height:auto;
+            padding:0;
+        }
+
+        a {
+            text-decoration:none;
+            color:inherit;
+            width:fit-content;
+        }
+
+        .row {
+            display:flex;
+            justify-content:center;
+            padding:0 15%;
+            max-width:1200px;
+        }
+
+        .item {
+            padding:10px;
+            flex-grow:1;
+        }
+
+        .btn {
+            width:fit-content;
+            max-width:50%;
+            padding:20px;
+            background:var(--green);
+            color:var(--black);
+            text-align:center;
+            transition:.25s;
+        }
+
+        .btn:hover {
+            transform:skewX(-15deg);
+        }
+
+        .cd {
+            background:var(--black);
+            color:var(--white);
+        }
+
+        .cn {
+            text-align:left;
+            max-width:50%;
+        }
+
+        .ph {
+            text-align:right;
+            max-width:50%;
+        }
+
+        .hero {
+            margin-top:calc((100vw * .3229) - 150px);
+            color:var(--green);
+            text-align:left;
+            font-size:24px;
+            font-weight:600;
+        }
+
+        .hero span {
+            font-size:7vw;
+            line-height:80%;
+        }
+
+        .hero .item  {
+            max-width:60%;
+        }
+
+        #hl {
+            max-width:100%;
+            transform-origin:center;
+
+        }
+
+        .hero .item div:nth-child(2) {
+            margin:25px 0;
+            font-size:20px;
+            line-height:150%;
+            font-weight:100;
+        }
+
+        .info {
+            margin:100px 0;
+            color:var(--white);
+        }
+
+        .info .item {
+            padding:15px;
+        }
+
+        .info img {
+            width:60%;
+            max-width:250px;
+            border-radius:50%;
+        }
+
+        .info h3 {
+            line-height:125%;
+        }
+
+        .info div {
+            line-height:200%;
+        }
+
+        @media all and (max-width: 800px) {
+            .row  {
+                display:block;
+                padding:0 2.5%;
+            }
+
+            .hero .item {
+                width:100%;
+                max-width:100%;
+            }
+
+            .hero img {
+                display:none;
+            }
+
+            .hero span {
+                font-size:48px;
+            }
+        }
+
+        @media all and (max-width: 425px) {
+            .hero span {
+                font-size:32px;
+            }
+
+            .info .item img {
+                width:100%;
+            }
+
+            .info h3 {
+                font-size:20px;
+            }
+        }
+
+        @media all and (max-width: 375px) {
+            .hero span {
+                font-size:28px;
+            }
+        }
+
+        @media all and (max-width: 320px) {
+            .hero span {
+                font-size:24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+      
+      <!--   Hero section -->
+
+        <div class="row hero">
+          <div class="item">
+            <div id="hl">Munnar<br>
+              <span>Jeep safari</span>        
+            </div>
+            <div>We offer a thrilling and adventurous way to explore the picturesque landscapes and natural beauty of this popular hill station in Kerala, India. Known for its lush tea plantations, rolling hills, and abundant wildlife, Munnar provides an ideal setting for a memorable jeep safari experience.</div>
+            <div class="btn"><a href="https://wa.me/+918921189742?text=I%20would%20like%20to%20know%20about%20the%20safari%20packages%20you%20offer">Pre-Book</a></div>
+          </div>
+          <div class="item">
+            <img src="https://contentservice.mc.reyrey.net/image_v1.0.0/5a084a8d-7430-5839-8df3-b262d25b9287" alt="">
+          </div>
+        </div>
+        <!--   Hero section -->
+      <!--   Info Section - Three Columns -->
+        <div class="row info">
+          <div class="item">
+            <img src="" alt="">
+            <h3>Off-Road safari</h3>
+            <div>Experience Munnar's untamed beauty on an off-road safari. Ride in a sturdy 4x4 jeep, explore rugged terrains, and discover hidden corners. Encounter stunning landscapes, tea plantations, and misty valleys. Spot wildlife like elephants and birds. With knowledgeable guides, it's an exciting adventure in Munnar's wilderness. Go off the beaten path and embrace the wild side of Munnar.</div>
+          </div>
+          <div class="item">
+             <img src="" alt="">
+            <h3>Night safari</h3>
+            <div>Embark on a captivating night safari in Munnar to observe wildlife in their natural habitat. With expert guides and specialized vehicles, explore the wilderness under the starlit sky. Encounter elusive nocturnal creatures and gain insight into their behavior and conservation. Immerse yourself in the magical world of nighttime wildlife on this unforgettable adventure.</div>
+          </div>
+          <div class="item">
+             <img src="" alt="">
+            <h3>Aanakulam Jeep Safari</h3>
+            <div>Embark on the exciting Anakulam Jeep Safari in Munnar. Witness majestic elephants, conquer off-road river crossings, and gain insights from expert guides. Experience the perfect blend of wildlife exploration and thrilling adventure in Munnar's wilderness.</div>
+          </div>
+        </div>
+        <!--   Info Section - Three Columns -->
+      </div>
+</body>
+</html>
