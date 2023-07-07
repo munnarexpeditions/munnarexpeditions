@@ -1,310 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mattupetty & Thekady</title>
-    <link rel="stylesheet" href="iten.css" />
-  </head>
-  <body>
-        <!-- WhatsApp Animated Icon -->
-<div id="whatsapp-icon" class="whatsapp-icon">
-  <a href="https://wa.me/+918921189742?text=I%20would%20like%20to%20know%20about%20the%20price%20details%20about%20mattupetty%20and%20Thekady,%202%20days%20package" target="_blank">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chinnar and Pothamed</title>
+  <link rel="stylesheet" href="iten.css" />
+</head>
+
+<body>
+  <!-- WhatsApp Animated Icon -->
+  <!-- <div id="whatsapp-icon" class="whatsapp-icon">
+    <a href="https://wa.me/+918921189742?text=I%20would%20like%20to%20know%20the%20price%20details%20about%20Chinnar%20and%20Mattupetty&%20chinnar%20Direction,%202%20days%20package" target="_blank">
       <div class="icon-container">
-          <i class="ri-whatsapp-line"></i>
-              </div>
+        <i class="ri-whatsapp-line"></i>
+      </div>
       <p>WhatsApp me!</p>
-  </a>
-</div>
-<script>
-  window.onload = function() {
+    </a>
+  </div> -->
+
+  <script>
+    window.onload = function () {
       document.getElementById('whatsapp-icon').classList.add('move');
-  };
+    };
 
-</script>
+    // Function to fetch and load the content
+    function loadContent(url, targetId) {
+      fetch(url)
+        .then(response => response.text())
+        .then(data => {
+          const target = document.getElementById(targetId);
+          target.innerHTML = data;
 
-    <section class="block block-1">
-      <div class="wrapper">
-        <div class="col col-left">
-          <h1 class="title">Day 1</h1>
-          <h1 class="title">Flower Garden</h1>
-          <p class="txt">
-            Start your day by visiting the Flower Garden, immersing yourself in the beauty and fragrance of various flowers
-           
-          </p>
-          <button id="beginBtn">Begin</button>
-        </div>
-        <div class="col col-right">
-          <img
-            class="block-img"
-            src="./public/images/flowergarden-visual.jpg"
-            alt="FLower garden img"
-          />
-        </div>
-      </div>
-    </section>
+          // Initialize ScrollTrigger for the loaded content
+          gsap.registerPlugin(ScrollTrigger);
 
-    <section class="block block-2">
-      <div class="wrapper">
-        <div class="col col-left">
-            <h1 class="title">Photopoint</h1>
-          <p class="txt">
-            Afterward, head to Photopoint and capture stunning photographs of the scenic surroundings.
-          </p>
-        </div>
-        <div class="col col-right">
-          <img
-            class="block-img"
-            src="./public/images/photo_point-idnery.jpg"
-            alt="Photopoint img"/>
-        </div>
-      </div>
-    </section>
+          gsap.utils.toArray('.block').forEach(section => {
+            ScrollTrigger.create({
+              trigger: section,
+              start: 'top top',
+              pin: true,
+              pinSpacing: false,
+            });
+          });
+        })
+        .catch(error => console.log(error));
+    }
 
-    <section class="block block-1">
-        <div class="wrapper">
-          <div class="col col-left">
-            <h1 class="title">Elephant Park</h1>
-            <p class="txt">
-                experience the Carmelagiri Elephant Safari and enjoy a thrilling ride while observing elephants in their natural habitat
-            </p>
-          </div>
-          <div class="col col-right">
-            <img
-              class="block-img"
-              src="./public/images/elephant_riding-tour.jpg"
-              alt="Elephant Park img"
-            />
-          </div>
-        </div>
-      </section>
-  
-      <section class="block block-2">
-        <div class="wrapper">
-          <div class="col col-left">
-              <h1 class="title">Botanical Garden</h1>
-            <p class="txt">
-                visit the Botanical Garden and take a leisurely stroll through the lush greenery, appreciating the diverse plant species.
-            </p>
-          </div>
-          <div class="col col-right">
-            <img
-              class="block-img"
-              src="./public/images/Botanical_Garden-visual.png"
-              alt="Botanical Garden  img"/>
-          </div>
-        </div>
-      </section>
+    // Load content from chinnar.html
+    loadContent('mattupetty.html', 'chinnarContent');
 
-      <section class="block block-1">
-        <div class="wrapper">
-          <div class="col col-left">
-            <h1 class="title">Mattupetty Tea Factory</h1>
-            <p class="txt">
-                Explore the Mattupetty Tea Factory, where you can learn about tea production and enjoy a fresh cup of tea.
-            </p>
-          </div>
-          <div class="col col-right">
-            <img
-              class="block-img"
-              src="./public/images/Tea_factory-visual.png"
-              alt="Mattupetty Tea Factory img"
-            />
-          </div>
-        </div>
-      </section>
-  
-      <section class="block block-2">
-        <div class="wrapper">
-          <div class="col col-left">
-              <h1 class="title">Mattupetty Dam</h1>
-            <p class="txt">
-                Proceeding to the Mattupetty Dam and indulge in speed boating activities on the reservoir.
-            </p>
-          </div>
-          <div class="col col-right">
-            <img
-              class="block-img"
-              src="./public/images/Dam-visual.jpg"
-              alt="Mattupetty Dam img"/>
-          </div>
-        </div>
-      </section>
+    // Load content from mattupetty.html
+    loadContent('Thekady.html', 'matupettyContent');
 
-      <section class="block block-1">
-        <div class="wrapper">
-          <div class="col col-left">
-            <h1 class="title">Film Shooting Point</h1>
-            <p class="txt">
-                Wrap up the day by visiting the Film Shooting Point Elephant Arrival Spot, known for its picturesque landscapes and occasional elephant sightings.
-            </p>
-          </div>
-          <div class="col col-right">
-            <img
-              class="block-img"
-              src="./public/images/shooting_point-visual.png"
-              alt="Film Shooting Point img"
-            />
-          </div>
-        </div>
-      </section>
-  
-      <section class="block block-2">
-        <div class="wrapper">
-          <div class="col col-left">
-              <h1 class="title">Top Station</h1>
-            <p class="txt">
-                Finally, heading to Top Station to enjoy a breathtaking view of the Tamil Nadu/Kerala border.
-            </p>
-          </div>
-          <div class="col col-right">
-            <img
-              class="block-img"
-              src="./public/images/top_staion-explore.jpg"
-              alt="Top Station img"/>
-          </div>
-        </div>
-      </section>
+    // Function to handle the button click event and scroll to the next section
+    function handleBeginButtonClick() {
+      const nextSection = document.querySelector('section.block-2');
+      if (nextSection) {
+        window.scrollTo({ top: nextSection.offsetTop, behavior: 'smooth' });
+      }
+    }
 
-    <!-- thekady starts Here -->
+    // Add event listener to the "Begin" button
+    const beginButton = document.getElementById('beginBtn');
+    if (beginButton) {
+      beginButton.addEventListener('click', handleBeginButtonClick);
+    }
+  </script>
 
-    <section class="block block-1">
-      <div class="wrapper">
-        <div class="col col-left">
-          <h1 class="title">Day 2</h1>
-          <h1 class="title">Signal View Point</h1>
-          <p class="txt">
-            Starting the day by visiting Signal View Point and enjoy the panoramic view of the surrounding landscapes.
-          </p>
-        </div>
-        <div class="col col-right">
-          <img
-            class="block-img"
-            src="./public/images/chinnar&thekady-tour.jpg"
-            alt="Signal View Point img"
-          />
-        </div>
-      </div>
-    </section>
+  <!-- Content from chinnar.html -->
+  <div id="chinnarContent"></div>
 
-    <section class="block block-2">
-      <div class="wrapper">
-        <div class="col col-left">
-            <h1 class="title">Lockhart Tea Factory</h1>
-          <p class="txt">
-            Proceeding to Lockhart Tea Factory for a guided tour and learn about the tea production process.
-          </p>
-        </div>
-        <div class="col col-right">
-          <img
-            class="block-img"
-            src="./public/images/Lockhart_Tea_Factory-idnery.jpg"
-            alt="Lockhart Tea Factory img"/>
-        </div>
-      </div>
-    </section>
+  <!-- Content from mattupetty.html -->
+  <div id="matupettyContent"></div>
 
-    <section class="block block-1">
-        <div class="wrapper">
-          <div class="col col-left">
-            <h1 class="title">Lockhart Viewpoint</h1>
-            <p class="txt">
-                Visiting Lockhart Viewpoint and capture stunning views of the tea plantations and the surrounding scenery.
-            </p>
-          </div>
-          <div class="col col-right">
-            <img
-              class="block-img"
-              src="./public/images/lockheart-view.jpg"
-              alt="Lakkom Waterfalls img"
-            />
-          </div>
-        </div>
-      </section>
-  
-      <section class="block block-2">
-        <div class="wrapper">
-          <div class="col col-left">
-              <h1 class="title">Gap Road View Point</h1>
-            <p class="txt">
-                Exploring Gap Road View Point and admire the breathtaking vistas of the valleys and mountains.
-            </p>
-          </div>
-          <div class="col col-right">
-            <img
-              class="block-img"
-              src="./public/images/gap-road-view.jpg"
-              alt="Gap Road View Point img"/>
-          </div>
-        </div>
-      </section>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/TextPlugin.min.js"></script>
+</body>
 
-      <section class="block block-1">
-        <div class="wrapper">
-          <div class="col col-left">
-            <h1 class="title">Periyakanal Waterfall View</h1>
-            <p class="txt">
-                Heading to Periyakanal Waterfall View and witness the beautiful cascades surrounded by lush greenery.
-            </p>
-          </div>
-          <div class="col col-right">
-            <img
-              class="block-img"
-              src="./public/images/Periyakanal-Waterfall-View.jpg"
-              alt="Periyakanal Waterfall View img"
-            />
-          </div>
-        </div>
-      </section>
-  
-      <section class="block block-2">
-        <div class="wrapper">
-          <div class="col col-left">
-              <h1 class="title">Anayarangal Dam</h1>
-            <p class="txt">
-                Concluding the trip with a visit to Anayarangal Dam and take in the serene beauty of the dam and its surroundings.
-            </p>
-          </div>
-          <div class="col col-right">
-            <img
-              class="block-img"
-              src="./public/images/anayarangal.jpg"
-              alt="Anayarangal Dam img"/>
-          </div>
-        </div>
-      </section>    
-
-
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/TextPlugin.min.js"></script>
-
-    <script>
-      /* Amazing scroll animation */
-      gsap.registerPlugin(ScrollTrigger);
-
-      gsap.utils.toArray(".block").forEach((section) => {
-        ScrollTrigger.create({
-          trigger: section,
-          start: "top top",
-          pin: true,
-          pinSpacing: false,
-        });
-      });
-
-      const beginButton = document.getElementById("beginBtn");
-        beginButton.addEventListener("click", () => {
-        const nextSection = document.querySelector("section.block-2"); // Replace "section.block-2" with the selector of your target section
-        if (nextSection) {
-            nextSection.scrollIntoView({ behavior: "smooth" });
-        }
-        });
-
-
-    </script>
-  </body>
 </html>
