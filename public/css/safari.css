@@ -1,0 +1,140 @@
+/* safari.css */
+
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles for the "hero" section */
+.row.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: black;
+}
+
+.row.hero .item {
+    flex: 1;
+}
+
+#hl {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    color: #228B22;
+    font-family: "Montserrat", sans-serif;
+}
+
+h2 {
+    color: #228B22;
+    margin-bottom: 20px;
+    padding: 10px 20px;/* Added margin-bottom for spacing */
+}
+
+.btn a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #228B22;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 20px; /* Added margin-top for spacing */
+}
+
+/* Styles for the "info" section */
+.row.info {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: black;
+}
+
+.row.info .item {
+    flex: 1 0 300px;
+    margin: 10px;
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+
+.row.info .item img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.row.info .item h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: green;
+    font-family: "Montserrat", sans-serif;
+}
+
+.row.info .item div {
+    font-size: 14px;
+    color: black;
+}
+
+/* Resolution: 375px */
+@media only screen and (min-width: 321px) and (max-width: 375px) {
+    /* No specific style changes for 375px resolution */
+  }
+  
+  /* Resolution: 425px */
+  @media only screen and (min-width: 376px) and (max-width: 425px) {
+    /* No specific style changes for 425px resolution */
+  }
+  
+  /* Resolution: 768px */
+  @media only screen and (min-width: 426px) and (max-width: 768px) {
+    .row.hero {
+      flex-direction: column;
+    }
+  
+    .item1 {
+      display: none;
+    }
+  
+    .item1 img {
+      max-width: 200px;
+    }
+  }
+  
+  /* Resolution: 1024px */
+  @media only screen and (min-width: 769px) and (max-width: 1024px) {
+    /* No specific style changes for 1024px resolution */
+  }
+  
+  /* Resolution: 1440px */
+  @media only screen and (min-width: 1025px) and (max-width: 1440px) {
+    /* No specific style changes for 1440px resolution */
+  }
+  
+  /* Image Hidden after 693px */
+  @media only screen and (max-width: 693px) {
+    .item1 img {
+      display: none;
+    }
+  }
+
+  @media only screen and (min-width: 769px) and (max-width: 1056px) {
+    .item1 {
+      text-align: right;
+    }
+  
+    .item1 img {
+      max-width: unset;
+      height: auto;
+      width: 100%;
+    }
+  }
+  
+
+  @media only screen and (min-width: 769px) and (max-width: 1040px) {
+    .item1 img {
+      width: 400px;
+      height: auto;
+    }
+  }
