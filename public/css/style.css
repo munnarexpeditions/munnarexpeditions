@@ -536,7 +536,7 @@ li {
 }
 .banner {
   position: relative;
-  background: linear-gradient(rgba(0, 0, 0, 0.401), rgba(0, 0, 0, 0.605)), url("/public/images/tour-pothamedu.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.401), rgba(0, 0, 0, 0.605)), url("checkthis/public/images/tour-pothamedu.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
