@@ -56,12 +56,14 @@ h2 {
     flex: 1 0 300px;
     margin: 10px;
     padding: 20px;
-    background-color: #f2f2f2;
+    background-color: rgb(242, 242, 242);
+    border-radius:20px ;
 }
 
 .row.info .item img {
     width: 100%;
     margin-bottom: 10px;
+    border-radius: 20px;
 }
 
 .row.info .item h3 {
@@ -116,6 +118,7 @@ h2 {
   @media only screen and (max-width: 693px) {
     .item1 img {
       display: none;
+    
     }
   }
 
@@ -128,6 +131,7 @@ h2 {
       max-width: unset;
       height: auto;
       width: 100%;
+      
     }
   }
   
