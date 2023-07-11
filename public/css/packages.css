@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+
 .section_our_solution .row {
     align-items: center;
   }
@@ -69,6 +71,8 @@
     font-size: 1.3rem;
     margin-top: 13px;
     margin-bottom: 13px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
   }
   
   .solution_card .solu_description p {
@@ -95,6 +99,8 @@
     text-transform: capitalize;
     margin-bottom: 1rem;
     font-size: 2.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
   }
   .our_solution_content p {
   }
@@ -166,4 +172,120 @@
       margin: 0 auto;
     }
   }
+
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #FFFFFF;
+    color: #333333;
+}
+.service {
+    margin-bottom: 20px;
+}
+.service-title {
+    color: #6eb611;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+}
+.service-description {
+    margin-left: 10px;
+}
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+}
+
+.container h1{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
+}
+
+.container {
+  border-radius: 20px;
+}
+
+
+/*WhatsApp Animated Icon Styles*/
+.whatsapp-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  text-align: center;
+}
+
+.icon-container {
+  display: inline-flex; /* Centers the icon vertically */
+  justify-content: center; /* Centers the icon horizontally */
+  width: 60px; /* Adjust size as needed */
+  height: 60px; /* Adjust size as needed */
+  border-radius: 50%; /* Makes the border round */
+  background-color:white; /* Sets the inside color to black */
+  border: 1px solid,black; /* Adjust border color/size as needed */
+}
+
+.whatsapp-icon i {
+  font-size: 48px;
+  color: green;
+  align-self: center; /* Centers the icon vertically */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.whatsapp-icon p {
+  font-size: 14px;
+  font-weight: bold;
+  color:white;
+  margin: 0;
+  margin-bottom: 10px; /* Add bottom margin */
+}
+
+/* Change color on hover */
+.whatsapp-icon:hover .icon-container {
+  background-color: black;
+}
+
+.whatsapp-icon:hover i {
+  color: green;
+}
+
+/*Animation Keyframes*/
+@keyframes move {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(-20px); }
+}
+
+.move {
+  animation: move 2s infinite;
+}
+
+@media (max-width: 600px) {
+
+  .whatsapp-icon {
+    position: fixed;
+    bottom: 10px;  /* reduced bottom margin */
+    right: 10px;  /* reduced right margin */
+  }
   
+  .icon-container {
+    width: 50px;  /* reduced size */
+    height: 50px;  /* reduced size */
+  }
+  
+  .whatsapp-icon i {
+    font-size: 30px;  /* reduced font size */
+  }
+  
+  .whatsapp-icon p {
+    font-size: 12px;  /* reduced font size */
+  }
+  
+  /*Reduce animation intensity for smaller screens*/
+  @keyframes move {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(-10px); }  /* reduced translation */
+  }
+
+}

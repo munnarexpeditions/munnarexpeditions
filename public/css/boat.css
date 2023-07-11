@@ -165,3 +165,9 @@ img {
   }
 
 }
+
+@media (max-width: 582px) {
+  .main-text {
+    font-size: 55px; /* Decreased font size for screens larger than 581px */
+  }
+}
