@@ -1000,3 +1000,10 @@ footer .credit a {
     padding: 0 0 0 5rem;
   }
 }
+
+
+@media (max-width: 448px) {
+  .banner-text h1 {
+    font-size: 50px; 
+  }
+}
