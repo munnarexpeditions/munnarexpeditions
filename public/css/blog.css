@@ -93,7 +93,7 @@ img:last-of-type {
 }
 
 #title {
-  background-image: url("/checkthis/public/images/lakkom-visual.png");
+  background-image: url("./public/images/lakkom-visual.png");
   z-index:2;
 }
 
