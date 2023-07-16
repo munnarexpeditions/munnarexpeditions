@@ -147,3 +147,41 @@ img:last-of-type {
     color: #fff;
     
   }
+
+
+  @media screen and (max-width: 603px) {
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .slide {
+      display: none;
+    }
+    
+    .rotate-device {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #ffffff;
+      font-family: Montserrat;
+      font-size: 24px;
+      color: #000000;
+    }
+  
+  }
+  
+  @media screen and (min-width: 604px) {
+    .rotate-device {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 1053px) {
+    p {
+      font-size: 100%;
+    }
+  }
