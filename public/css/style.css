@@ -457,8 +457,8 @@ li {
   gap: 1rem;
 }
 .primary-header .left-part img {
-  width: 50px;
-  filter: grayscale(1) invert(1);
+  width: 80px;
+  /* filter: grayscale(1) invert(1); */
 }
 .primary-header .left-part .logo {
   display: none;
@@ -848,10 +848,10 @@ footer .main-container {
   gap: 4rem;
 }
 footer .main-container img {
-  filter: grayscale(1) invert(1);
+  /* filter: grayscale(1) invert(1); */
   opacity: 90%;
   margin-bottom: 0.1rem;
-  width: 55px;
+  width: 85px;
 }
 footer .main-container p {
   font-family: 'Montserrat', sans-serif;
