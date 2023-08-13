@@ -114,17 +114,17 @@ img:last-of-type {
 }
 
 #slide3:before {
-  background-image: url("/checkthis/public/images/wayand.jpg");
+  background-image: url("/munnarexpeditions/public/images/wayand.jpg");
   transform: translateZ(-1px) scale(2);
 }
 
 #slide4 {
-    background-image: url("/checkthis/public/images/azhapula.webp");
+    background-image: url("/munnarexpeditions/public/images/azhapula.webp");
     z-index:2;
 }
 
 #slide5:before {
-  background-image: url("/checkthis/public/images/trivandaram.webp");
+  background-image: url("/munnarexpeditions/public/images/trivandaram.webp");
   transform: translateZ(-1px) scale(2);
 }
 
