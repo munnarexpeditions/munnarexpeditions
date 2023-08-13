@@ -93,7 +93,7 @@ img:last-of-type {
 }
 
 #title {
-  background-image: url("/checkthis/public/images/lakkom-visual.png");
+  background-image: url("/munnarexpeditions/public/images/lakkom-visual.png");
   z-index:2;
 }
 
@@ -104,12 +104,12 @@ img:last-of-type {
 }
 
 #slide1:before {
-  background-image: url("/checkthis/public/images/view-visual.png");
+  background-image: url("/munnarexpeditions/public/images/view-visual.png");
   transform: translateZ(-1px) scale(2);
 }
 
 #slide2 {
-  background-image: url("/checkthis/public/images/chinnar&thekady-tour.jpg");
+  background-image: url("/munnarexpeditions/public/images/chinnar&thekady-tour.jpg");
   z-index:2;
 }
 
@@ -129,17 +129,17 @@ img:last-of-type {
 }
 
 #slide6 {
-  background-image: url("/checkthis/public/images/varkala1");
+  background-image: url("/munnarexpeditions/public/images/varkala1");
   z-index:2;
 }
 
 #slide7:before {
-  background-image: url("/checkthis/public/images/kochi.jpg");
+  background-image: url("/munnarexpeditions/public/images/kochi.jpg");
   transform: translateZ(-1px) scale(2);
 }
 
 #slide8 {
-    background-image: url("/checkthis/public/images/blogbackground.jpg");
+    background-image: url("/munnarexpeditions/public/images/blogbackground.jpg");
     z-index:2;
 }
 
